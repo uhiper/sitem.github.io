@@ -1,0 +1,239 @@
+/* Genel stiller */
+body {
+    font-family: 'Roboto', sans-serif; /* Yeni fontu uygulayın */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header stilleri */
+header {
+    background: linear-gradient(to right, #485058, #343a40, #485058); /* Üç renkli gradient stilini belirle */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #fff; /* Üst kenara beyaz çizgi ekle */
+    border-bottom: 3px solid #fff; /* Alt kenara da beyaz çizgi ekle */
+    border-left: 1px solid #fff; /* Sol kenara beyaz çizgi ekle */
+    border-right: 1px solid #fff; /* Sağ kenara da beyaz çizgi ekle */
+}
+
+/* Profil resmi ve metni için stil */
+.profile-info {
+    display: flex; /* Elemanları yan yana yerleştir */
+    align-items: center; /* Elemanları dikey olarak hizala */
+    justify-content: center; /* Yatayda merkezle */
+}
+
+.profile-picture {
+    width: 140px;
+    height: auto;
+    border-radius: 45%;
+    margin-right: 10px;
+    box-shadow: 2 3 15px rgba(248, 248, 248, 0.1);
+}
+
+h1{
+    margin: 5px 0;
+    font-size: 29px;
+    color: #ffffff; /* Başlık rengini değiştirin */
+    
+    letter-spacing: 1px; /* Harfler arası boşluğu ayarlayın */
+}
+h2 {
+    margin: 5px 0;
+    font-size: 29px;
+    color: #000000; /* Başlık rengini siyah olarak ayarlayın */
+
+    letter-spacing: 1px; /* Harfler arası boşluğu ayarlayın */
+}
+
+/* Bölüm stilleri */
+.section-title {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    margin-bottom: 40px;
+}
+
+/* Eğitim bölümü stilleri */
+.education-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Yetenekler bölümü stilleri */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+/* Footer stilleri */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-top: 10px; /* Yazı ile ikonlar arasındaki boşluğu ayarlar */
+}
+
+.footer-icons a {
+    font-size: 28px; /* Ikon boyutu */
+    margin-right: 15px; /* Her ikon arasındaki boşluk */
+    color: #fff; /* Ikon rengi (varsayılan olarak beyaz) */
+    transition: color 0.3s; /* Renk geçiş süresi */
+}
+
+.footer-icons a:hover i {
+    color: #6d9dd1; /* Hover durumunda ikon rengi */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ikon gölgesi ekleyin */
+    transform: scale(1.1); /* Hover durumunda ikonu biraz büyütün */
+}
+
+.footer-icons a i {
+    color: #fff; /* Tüm ikonların varsayılan rengi (beyaz) */
+    transition: color 0.3s; /* Renk geçiş süresi */
+}
+
+.footer-icons a[href="mailto:umutakbulut1155@hotmail.com"] i:hover {
+    color: #bcdfec; /* E-posta ikonunun hover durumundaki rengi */
+}
+
+.footer-icons a[href="https://www.linkedin.com/in/umutakbulutt/"] i:hover {
+    color: #3b84d3; /* LinkedIn ikonunun hover durumundaki rengi */
+}
+
+.footer-icons a[href="https://www.instagram.com/umutt.akbulut/"] i:hover {
+    color: #ec4c69; /* Instagram ikonunun hover durumundaki rengi */
+}
+
+.footer-icons a[href="https://github.com/uhiper"] i:hover {
+    color: #252424; /* GitHub ikonunun hover durumundaki rengi */
+}
+.footer-icons a[href="blog.html"] i:hover {
+    color: #FF914D; /* blog ikonunun hover durumundaki rengi */
+}
+
+/* Header animasyonu */
+header h1, header h2 {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.5s; /* Animasyon gecikmesi ekleyin */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Profil resmi animasyonu */
+.profile-picture {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards; /* Animasyon süresini kısaltın */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #495057;
+}
+.game-section {
+    text-align: center;
+    margin-top: 50px; /* Oyun alanının sayfanın üstünden biraz daha aşağıda olmasını sağlar */
+}
+
+.game-section .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.game-section .button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi değişimi */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Kenarlık yok */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Geçiş efektleri */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi değişimi */
+    transform: translateY(-2px); /* Hover durumunda yukarı doğru biraz kaydırma */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Başlangıç konumu */
+    }
+    50% {
+        transform: translateY(-5px); /* Yükseklik */
+    }
+    100% {
+        transform: translateY(0); /* Başlangıç konumuna geri dön */
+    }
+}
+
+.button-container {
+    text-align: center; /* Butonu ortalamak için */
+    margin-top: 50px; /* Üst boşluk ekleyin */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Kenarlık yok */
+    transition: background-color 0.3s; /* Arka plan rengi için geçiş efekti */
+    cursor: pointer;
+    animation: moveUpDown 2s infinite; /* Animasyonu başlat */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi değişimi */
+}

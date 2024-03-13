@@ -1,0 +1,161 @@
+/* Genel stiller */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header stilleri */
+header {
+    background-image: url(blogfoto/header.png); /* Arka plan resmini ekleyin */
+    background-size: cover; /* Resmi kaplaması için */
+    background-position: center; /* Resmi ortala */
+    color: #fff;
+    
+    text-align: center;
+    border-top: 3px solid #f8f9fa;
+    border-bottom: 3px solid #f8f9fa;
+    border-left: 1px solid #f8f9fa;
+    border-right: 1px solid #f8f9fa;
+
+    padding: 40px 20px; /* Yukarı-aşağı 40px, sağ-sol 20px padding */
+}
+
+
+
+/* Başlık stilleri */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+/* Metin stilleri */
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Bağlantı stilleri */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Resim stilleri */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bölüm stilleri */
+.section-title {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px; /* Üst boşluk ekle */
+}
+
+.section-content {
+    margin-bottom: 40px;
+    margin-top: 20px; /* Üst boşluk ekle */
+}
+
+/* Blog gönderi stilleri */
+.blog-post {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Üst boşluk ekle */
+    border-bottom: 1px solid #dee2e6; /* Alt çizgi stilini ekler */
+}
+
+.post-content {
+    flex: 1;
+    padding-right: 20px;
+    padding-top: 10px; /* Yazı ile resim arasına üst boşluk ekler */
+    margin-right: 20px; /* Başlık ile resim arasına sağ boşluk ekler */
+}
+
+.post-image {
+    flex: 1;
+    text-align: center;
+    padding-left: 20px; /* Resim ile yazı arasına sol boşluk ekler */
+    margin-left: 20px; /* Resim ile başlık arasına sol boşluk ekler */
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #eee; /* Sınır rengi ve kalınlığı */
+    border-radius: 10px; /* Köşeleri yuvarlama */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+    transition: transform 0.3s ease; /* Fare üzerine gelince büyüme efekti */
+}
+
+.post-image img:hover {
+    transform: scale(1.05); /* Fare üzerine gelince resmi biraz büyütme */
+}
+
+/* Footer stilleri */
+footer {
+    background-color: #FF914D; /* Turuncu arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+    padding: 20px;
+    text-align: center;
+}
+.footer-icons {
+    margin-top: 10px; /* Yazı ile ikonlar arasındaki boşluğu ayarlar */
+}
+
+.footer-icons a {
+    font-size: 28px; /* Ikon boyutu */
+    margin-right: 15px; /* Her ikon arasındaki boşluk */
+    color: #fff; /* Ikon rengi (varsayılan olarak beyaz) */
+    transition: color 0.3s; /* Renk geçiş süresi */
+}
+
+.footer-icons a:hover i {
+    color: #6d9dd1; /* Hover durumunda ikon rengi */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ikon gölgesi ekleyin */
+    transform: scale(1.1); /* Hover durumunda ikonu biraz büyütün */
+}
+
+.footer-icons a i {
+    color: #fff; /* Tüm ikonların varsayılan rengi (beyaz) */
+    transition: color 0.3s; /* Renk geçiş süresi */
+}
+
+.footer-icons a[href="mailto:umutakbulut1155@hotmail.com"] i:hover {
+    color: #bcdfec; /* E-posta ikonunun hover durumundaki rengi */
+}
+
+.footer-icons a[href="https://www.linkedin.com/in/umutakbulutt/"] i:hover {
+    color: #3b84d3; /* LinkedIn ikonunun hover durumundaki rengi */
+}
+
+.footer-icons a[href="https://www.instagram.com/umutt.akbulut/"] i:hover {
+    color: #ec4c69; /* Instagram ikonunun hover durumundaki rengi */
+}
+
+.footer-icons a[href="https://github.com/uhiper"] i:hover {
+    color: #252424; /* GitHub ikonunun hover durumundaki rengi */
+}
+header h1 {
+    color: white;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* X-offset, Y-offset, blur radius ve shadow rengi */
+}
+
